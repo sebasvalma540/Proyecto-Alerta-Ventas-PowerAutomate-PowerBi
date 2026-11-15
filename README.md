@@ -20,7 +20,7 @@ GitHub: [sebasvalma540](https://github.com/sebasvalma540)
 > 📁 Guarda las capturas en una carpeta `imagenes/` junto a este README, con los nombres indicados.
 
 <p align="center">
-  <img src="Imagenes/Flujo%20Alerta%20Ventas.png" alt="Flujo Alerta Ventas" width="700">
+  <img src="Imagenes/Flujo%20Alerta%20Ventas.png" alt="Flujo Alerta Ventas" width="350">
   <br><em>📷 Flujo Alerta Ventas</em>
 </p>
 
@@ -69,7 +69,7 @@ Formatos de texto (VarVenta, VarMeta, ValorDiferencia)
 ### 1. Recurrence (programación)
 
 <p align="center">
-  <img src="imagenes/02-recurrence.png" alt="Configuración de Recurrence" width="700">
+  <img src="Imagenes\Recurrence.png"" alt="Configuración de Recurrence" width="350">
   <br><em>📸 Configuración de Recurrence</em>
 </p>
 
@@ -87,7 +87,7 @@ Resultado: el flujo se ejecuta **todos los días a las 8:00 y 18:00**.
 ### 2. Ejecutar una consulta con un conjunto de datos
 
 <p align="center">
-  <img src="imagenes/03-consulta-powerbi.png" alt="Acción de consulta a Power BI con código DAX" width="700">
+  <img src="Imagenes\PowerBi_DAX.png"" alt="Acción de consulta a Power BI con código DAX" width="350">
   <br><em>📸 Acción de consulta a Power BI con código DAX</em>
 </p>
 
@@ -116,7 +116,7 @@ ORDER BY
 ### 3. VentasTotales – Redactar
 
 <p align="center">
-  <img src="imagenes/04-redactar-ventas.png" alt="Redactar con la expresión que extrae la venta total" width="700">
+  <img src="Imagenes\Redactar_VentaTotal.png" alt="Redactar con la expresión que extrae la venta total" width="350">
   <br><em>📸 Redactar con la expresión que extrae la venta total</em>
 </p>
 
@@ -129,7 +129,7 @@ outputs('Ejecutar_una_consulta_con_un_conjunto_de_datos')?['body/firstTableRows'
 ### 4. Inicializar variables
 
 <p align="center">
-  <img src="imagenes/05-variables.png" alt="Variables ValorVentaTotal, ValorMetaReferencial y ValorDiferencia" width="700">
+  <img src="Imagenes\Variables.png" alt="Variables ValorVentaTotal, ValorMetaReferencial y ValorDiferencia" width="230">
   <br><em>📸 Variables ValorVentaTotal, ValorMetaReferencial y ValorDiferencia</em>
 </p>
 
@@ -144,7 +144,7 @@ Se guardan los valores en variables de tipo **Flotante** para poder operarlos.
 ### 5. Formato de los valores
 
 <p align="center">
-  <img src="imagenes/06-formatos.png" alt="Acciones de formato de moneda" width="700">
+  <img src="Imagenes\Formato.png" alt="Acciones de formato de moneda" width="230">
   <br><em>📸 Acciones de formato de moneda</em>
 </p>
 
@@ -161,7 +161,7 @@ concat('S/ ', formatNumber(variables('<NombreVariable>'), '#,##0', 'en-US'))
 ### 6. Condición: ¿Se superó la meta?
 
 <p align="center">
-  <img src="imagenes/07-condicion.png" alt="Condición y ramas True / False" width="700">
+  <img src="Imagenes\Condiciones.png" alt="Condición y ramas True / False" width="450">
   <br><em>📸 Condición y ramas True / False</em>
 </p>
 
@@ -176,12 +176,18 @@ ValorVentaTotal  es mayor que  ValorMetaReferencial
 2. **Publicar mensaje en un chat o canal** (Teams): el **Bot de Flow** envía un chat con el resumen de ventas y el mensaje *"¡Meta superada!"*.
 
 <p align="center">
-  <img src="imagenes/08-correo-teams-config.png" alt="Configuración del correo y del mensaje de Teams" width="700">
+  <img src="Imagenes\True.png"" alt="Configuración del correo y del mensaje de Teams" width="200">
   <br><em>📸 Configuración del correo y del mensaje de Teams</em>
 </p>
 
 **Si es False:**
 - Una acción **Redactar** con el texto *"Meta no superada"* (el flujo no envía correo ni mensaje).
+
+<p align="center">
+  <img src="Imagenes\False.png" alt="Configuración del correo y del mensaje de Teams" width="200">
+  <br><em></em>
+</p>
+
 
 ## 📬 Resultado esperado
 
